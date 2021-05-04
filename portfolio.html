@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+        <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
   <!--шапка страницы--> 
@@ -30,19 +31,17 @@
   <main>
       <!--секция 1. Кнопки-->
       <section class="section">
-        <h1 class="section-title">Портфолио</h1>
-        <ul class="button list">
-            <li><button type="button" class="button-list" >Все</button></li>
+         <h1 class="visually-hidden">Портфолио</h1>
+         <ul class="button list">
+            <li><button type="button" class="button-list button-prime" >Все</button></li>
             <li><button type="button" class="button-list">Веб-сайты</button></li>
             <li><button type="button" class="button-list">Приложения</button></li>
             <li><button type="button" class="button-list">Дизайн</button></li>
             <li><button type="button" class="button-list">Маркетинг</button></li>
-        </ul>
-      </section>
-      <!--Секция 2. Проекты-->
-      <section class="project">
-          <h2 class="projects">Проекты</h2>
-          <ul class="project-list list">
+         </ul>
+      
+          <!-- Проекты -->
+          <ul class="projects list">
                <li><img src="./images/people.jpg" width="370" height="294" alt="трое людей в экране монитора">
              <h3 class="project-title">Технокряк</h3>
              <p class="project-type">Веб-сайт</p>

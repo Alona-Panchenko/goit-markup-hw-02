@@ -4,12 +4,15 @@
   --accent-text-color: #2196f3;
   --contacts-footer-text-color: rgba(255, 255, 255, 0.6);
   --second-background-color: #2f303a;
+  --primary-background-color: #ffffff;
+  --supplementary-color: #ffffff;
+  --section-background-color: #f5f4fa;
 }
 
 /* Общее */
 
 body {
-  background-color: #ffffff;
+  background-color: var(--primary-background-color);
   color: var(--primary-text-color);
   font-family: roboto, sans-serif;
   font-style: normal;
@@ -46,6 +49,10 @@ body {
   text-decoration: none;
 }
 
+.site-nav .current {
+  color: var(--accent-text-color);
+}
+
 .list {
   list-style: none;
 }
@@ -65,10 +72,15 @@ body {
 
 /* кнопочки */
 
+.button-prime {
+  background-color: var(--accent-text-color);
+  color: var(--supplementary-color);
+}
+
 .button-list:hover,
 .button-list:focus {
   background-color: var(--accent-text-color);
-  color: #ffffff;
+  color: var(--supplementary-color);
 }
 
 .button-list {
@@ -94,14 +106,20 @@ body {
 }
 
 /* Герой */
+
+.hero {
+  background-color: var(--second-background-color);
+}
+
 .hero .hero-title {
-  color: #ffffff;
+  color: var(--supplementary-color);
   background-color: var(--second-background-color);
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-align: center;
+  text-transform: uppercase;
 }
 
 /* features */
@@ -111,6 +129,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-align: left;
+  text-transform: uppercase;
 }
 
 .features-idea {
@@ -122,24 +141,33 @@ body {
   color: var(--second-text-color);
 }
 
+/* наша команда */
+
+.team {
+  background-color: var(--section-background-color);
+}
 /* футер */
 
 footer {
-  background-color: var(--second-text-color);
+  background-color: var(--second-background-color);
 }
 .footer-logo {
   color: #2196f3;
 }
 .footer-webstudio {
-  color: #ffffff;
+  color: var(--supplementary-color);
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
   text-decoration: none;
 }
 
+.footer-nav {
+  font-style: normal;
+}
+
 .footer-nav .footer-adress {
-  color: #ffffff;
+  color: var(--supplementary-color);
 }
 .footer-nav .link {
   color: rgba(255, 255, 255, 0.6);
@@ -153,4 +181,16 @@ footer {
 .footer-nav .link:hover,
 .footer-nav .link:focus {
   color: var(--accent-text-color);
+}
+
+/* скрытое */
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
